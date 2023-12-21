@@ -7,6 +7,7 @@ final class FinalClass {
         finalVariable2 = 10 + finalVariable1 ;
     }
 
+
     // Метод для використання final змінних
     public int calculateFinalValue() {
         return finalVariable1 * finalVariable2;

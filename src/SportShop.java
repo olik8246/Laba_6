@@ -28,6 +28,9 @@ class Goods extends SportShop {
     }
 }
 class Prise extends Goods {
+    void discount(){
+        System.out.println("Ви отримали знижку в магазині!!!");
+    }
     int choice(int a, int b){
         choice(a);
         if (a==1){
