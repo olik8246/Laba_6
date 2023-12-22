@@ -1,4 +1,5 @@
-class GymServices {
+
+class GymServices{
     public void showServices() {
         System.out.println("_______________________________________________");
         System.out.println("Додаткові послуги в спортзалі:");

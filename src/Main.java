@@ -29,7 +29,7 @@ public class Main {
         prise.choice(2,3);
         discountShop.discountS(2,3);
         Final final_ = new Final();
-        final_.draw();
+        final_.fin();
 
 
     }

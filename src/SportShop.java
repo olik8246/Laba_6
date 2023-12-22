@@ -1,11 +1,16 @@
+interface Dis{
+    void discountS(int a, int b);
+}
 public class SportShop {
-    void choice(){
+    public void choice(){
         System.out.println("1)Шейкери");
         System.out.println("2)Ємкості для води");
         System.out.println("3)Ремні та пояси");
     }
+
 }
 class Goods extends SportShop {
+
     int choice(int a) {
         choice();
         if (a==1){

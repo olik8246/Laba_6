@@ -6,6 +6,7 @@ final class FinalClass {
     public FinalClass() {
         finalVariable2 = 10 + finalVariable1 ;
     }
+    final
 
 
     // Метод для використання final змінних

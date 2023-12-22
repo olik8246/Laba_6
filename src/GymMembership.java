@@ -1,4 +1,10 @@
-class GymMembership {
+interface Calculate{
+
+    void calculatePrice(double discount);
+    void purchaseServices(GymServices services);
+
+}
+class GymMembership implements Calculate {
     private  double discount;
     private String memberName;
     private int membershipType; // 1 Денний абонемент  2 Місячний абонемент  3 Річний абонемент
@@ -32,14 +38,14 @@ class GymMembership {
     }
 
 
-    void calculatePrice(double discount) {
+    public void calculatePrice(double discount) {
         price = (price/100)*(100- discount);
         System.out.println("Клієнт " + memberName + " отримав знижку " + discount + "%.");
         System.out.println("Загальна ціна "+ typeAbonement +" абонементу: ₴ " + price);
     }
 
     // Виклик методу, що викликає метод із іншого класу
-    void purchaseServices(GymServices services) {
+    public void purchaseServices(GymServices services) {
         services.showServices();
         System.out.println("Клієнт " + memberName + " купив додаткові послуги.");
     }
